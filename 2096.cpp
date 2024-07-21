@@ -13,38 +13,56 @@
 // SC: O(1)
 class Solution {
 public:
-    bool dfs(TreeNode *root, int val, string &ret) {
+    TreeNode *getlca(TreeNode *root, int start, int dest) {
+        if (!root)
+            return NULL;
+        
+        if (root->val == start || root->val == dest)
+            return root;
+        
+        TreeNode *left = getlca(root->left, start, dest);
+        TreeNode *right = getlca(root->right, start, dest);
+        
+        if (left && right)
+            return root;
+        return left ? left : right;
+    }
+    bool dfs(TreeNode *root, int val, string &path) {
         if (!root)
             return false;
         if (root->val == val)
             return true;
-        if (dfs(root->left, val, ret))
-            ret.push_back('L');
-        if (dfs(root->right, val, ret))
-            ret.push_back('R');
-        return !ret.empty();
+
+        path.push_back('L');
+        if (dfs(root->left, val, path))
+            return true;
+        path.pop_back();
+            
+        path.push_back('R');
+        if (dfs(root->right, val, path))
+            return true;
+        path.pop_back();
+
+        return false;
     }
     string getDirections(TreeNode* root, int startValue, int destValue) {
         string sPath, dPath;
+        
         /*
          * Input: root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6
-         * Step 1: Get path from root to start and dest
+         * Step 1: get lowest common ancestor(lca)
+         */
+        TreeNode *lca = getlca(root, startValue, destValue);
+        /*
+         * Step 2: Get path from lca to start and dest
          * So we get "LL" and "RL"
          */
-        dfs(root, startValue, sPath);
-        dfs(root, destValue, dPath);
-        
-        /* 
-         * Step 2: Remove common prefix path
-         */
-        while (!sPath.empty() && !dPath.empty() && sPath.back() == dPath.back()) {
-            sPath.pop_back();
-            dPath.pop_back();
-        }
+        dfs(lca, startValue, sPath);
+        dfs(lca, destValue, dPath);
+
         /*
-         * Step 3: Replace all steps in the start path to "U" and add dest path
+         * Step 3: convert all lca to start path into 'U', since we would move upward
          */
-        reverse(dPath.begin(), dPath.end());
         return string(sPath.size(), 'U') + dPath;
     }
 };
