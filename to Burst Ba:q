@@ -1,0 +1,717 @@
+[33mcommit 7b31e261e2a3575c0f34b41c1fb629a22076d515[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jul 27 23:36:59 2024 +0800
+
+    452. Minimum Number of Arrows to Burst Balloons
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b52a6ebf6c72fcecb0ba05b2efc1c0bada0713e1[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jul 27 23:02:38 2024 +0800
+
+    13. Roman to Integer
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit dcd1d3cd5f493bccc675f132bc4f752069a46731[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jul 27 22:35:50 2024 +0800
+
+    20. Valid Parentheses
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 32f43a79f87f6b59498f4be71ff7d3a99641d834[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu Jul 25 11:46:34 2024 +0800
+
+    912. Sort an Array
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 962bca77fcac169434e8674efb745e1b3a374f13[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 24 23:17:57 2024 +0800
+
+    122. Best Time to Buy and Sell Stock II
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b630ade193a077262cd0ca6dffe02451c947b854[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 24 22:55:15 2024 +0800
+
+    121. Best Time to Buy and Sell Stock
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 47b77f468bd5109344f9d017ad31b9a1db6c05dc[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 24 22:26:57 2024 +0800
+
+    1717. Maximum Score From Removing Substrings
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 6b41c785d34b8079557ff3be07bfe1606cc8953c[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 24 18:34:39 2024 +0800
+
+    1605. Find Valid Matrix Given Row and Column Sums
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit cbba92280a420967da6748f56bcab3b7e8e259af[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 24 17:56:39 2024 +0800
+
+    1380. Lucky Numbers in a Matrix
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 4161e89cf423a2d7140badce0bf50694f9bfb299[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 24 17:48:09 2024 +0800
+
+    2191. Sort the Jumbled Numbers
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 3cba7a828059213e5da570404e236e5ffa83e54b[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jul 21 22:22:52 2024 +0800
+
+    2096. Step-By-Step Directions From a Binary Tree Node to Another
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 86c11586325d1bd01fa7ca34821e07e6d6dd0ec5[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jul 21 21:44:28 2024 +0800
+
+    1530. Number of Good Leaf Nodes Pairs
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit afef47d2f9134d28d607a822afcbd0ed8bf4cc5a[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jul 21 20:26:15 2024 +0800
+
+    2096. Step-By-Step Directions From a Binary Tree Node to Another
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 8cf4ca3effef907b8dfb841ca11791dc05a9363c[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jul 17 23:17:45 2024 +0800
+
+    1110. Delete Nodes And Return Forest
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit e63284d56abcf2b18cb128212390da4d6611a0e3[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jul 16 23:18:35 2024 +0800
+
+    1190. Reverse Substrings Between Each Pair of Parentheses
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit abf4842c6179b8f756a82eb5257c744f0860e942[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jul 16 22:22:47 2024 +0800
+
+    2196. Create Binary Tree From Descriptions
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 36499a99dfa370b5100ff336c7a16db3c4b24a70[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu Jul 11 22:38:44 2024 +0800
+
+    862. Shortest Subarray with Sum at Least K
+
+[33mcommit fdd84400df3b18cf5be49d1e7e17aaf69ffdef10[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu Jul 4 22:42:03 2024 +0800
+
+    2181. Merge Nodes in Between Zeros
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 9ddad540d0e4c8a6e24a3462a77ecbdefc99f186[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jul 2 22:24:38 2024 +0800
+
+    209. Minimum Size Subarray Sum
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 87656a8ccf1fe97022c292c8d365c6a26fcf5c6a[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jul 2 21:57:25 2024 +0800
+
+    904. Fruit Into Baskets
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit a175d097a0adeb2d6faa56513f6e9cda14770837[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jul 2 21:44:57 2024 +0800
+
+    992. Subarrays with K Different Integers
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 906a68845e9e42ecda6517a3d3945edb982a3c3f[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 30 11:07:12 2024 +0800
+
+    930. Binary Subarrays With Sum
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 9366c6853072fcca186d1b6dfe702ace075b5e42[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 30 10:08:37 2024 +0800
+
+    485. Max Consecutive Ones
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit f4c7da946d789982baeef787edc97efac4cae064[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 30 10:04:17 2024 +0800
+
+    1004. Max Consecutive Ones III
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 29b1a8c949cba07feffba54dcbb6e743ec3e4637[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 30 09:32:10 2024 +0800
+
+    1234. Replace the Substring for Balanced String
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 57f627b5fd2fe465ae0ff593c83efe54aed3857f[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 30 00:15:06 2024 +0800
+
+    1248. Count Number of Nice Subarrays
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 3867f6e9b2359cac0a0264a4f7fc6b7dc6efd25b[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 29 23:34:17 2024 +0800
+
+    1358. Number of Substrings Containing All Three Characters
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit ca32a8d81fe2ab6570bdd3a8bf64eb0a25bac638[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 29 22:56:15 2024 +0800
+
+    1425. Constrained Subsequence Sum
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b42e2d5aa72100b22451e51aaa06c827cb73e7f4[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 25 23:21:20 2024 +0800
+
+    239. Sliding Window Maximum
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b95585fe15db0e0dcbc9815b7338b2fa2ba14890[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 25 22:40:23 2024 +0800
+
+    1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 844e45ac8cc71f4dd8bdad75845fa7962106a6a8[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 22 10:37:17 2024 +0800
+
+    410. Split Array Largest Sum
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit cba16f816d9970e56b92cfe90c177fccebecc058[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 22 10:24:49 2024 +0800
+
+    875. Koko Eating Bananas
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 62ca627d69c3726789df769d4cd0ea05067d85aa[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 22 10:08:20 2024 +0800
+
+    1011. Capacity To Ship Packages Within D Days
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 8e1cbc05f92f07a3fa8e45b355e8cad0f840e351[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 22 09:39:37 2024 +0800
+
+    1283. Find the Smallest Divisor Given a Threshold
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit df7a16587705b4d208cda8f6f18c4fc2c388245e[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 22 09:23:31 2024 +0800
+
+    1482. Minimum Number of Days to Make m Bouquets
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit e23bb954b55277d7b8df4040faafac3c725524ba[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Mon Jun 17 23:34:30 2024 +0800
+
+    392. Is Subsequence
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit ae7b87f97b446faf3a248bb9a402d7d69461fc8c[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Mon Jun 17 23:23:39 2024 +0800
+
+    633. Sum of Square Numbers
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 65dd45e3d708c3bb5d824d00675c7ce98cb98bd4[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Mon Jun 17 00:22:52 2024 +0800
+
+    212. Word Search II
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b3d5efb01414ee528a93391d537908542e159af9[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 16 15:31:44 2024 +0800
+
+    79. Word Search
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 68a8a139d3b8ad830becb88b78e2f7ac0a9b9036[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 16 15:14:16 2024 +0800
+
+    373. Find K Pairs with Smallest Sums
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit a72cce43fe1e55a6d8444cdbac94b6df4fd8ef66[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 15 17:03:03 2024 +0800
+
+    1383. Maximum Performance of a Team
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 848c44178ecfa4be2859e61b9b229dc67e258892[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 15 16:45:06 2024 +0800
+
+    2542. Maximum Subsequence Score
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 22ba4f9aaa28b6377f7d1f46aa677956f11a6fcf[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 15 12:21:22 2024 +0800
+
+    502. IPO
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 4635bb50d92363e79b254c86fcc2f17a6c8216c4[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 15 11:32:03 2024 +0800
+
+    116. Populating Next Right Pointers in Each Node
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 3938db289f9792ff4d451a515d6e0755d62d4827[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 15 11:26:54 2024 +0800
+
+    117. Populating Next Right Pointers in Each Node II
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 2d938ab612e154ad0890da6030882be6e5f2b5ed[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 15 11:14:08 2024 +0800
+
+    104. Maximum Depth of Binary Tree
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit ed8c2e8cdd91683db035a38bbefcab86ab8d79ac[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 11 23:36:07 2024 +0800
+
+    980. Unique Paths III
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 17788fc58a53df5e43082a11fbe1ec287f55e622[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 11 23:06:50 2024 +0800
+
+    62. Unique Paths
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 6afe7a59b390d9f57a14aa7a9c46737aa75ddaf1[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 11 23:02:02 2024 +0800
+
+    63. Unique Paths II
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 87ed13386f66e0fe8a9c481c3c4836e87d70f8d3[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 11 22:51:20 2024 +0800
+
+    1122. Relative Sort Array
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 37b25e055c19dfcd6da1a3f0ce28f566947bdaea[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Mon Jun 10 23:16:58 2024 +0800
+
+    2. Add Two Numbers
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 2935e4045b3faa4bf2a06652b833b01f2b7f78a3[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 8 14:37:44 2024 +0800
+
+    141. Linked List Cycle
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b7f671c520ed7e13aa227675e43e44cc027be42a[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 8 14:30:50 2024 +0800
+
+    523. Continuous Subarray Sum
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 7a2557db53acf1222c300bf36fe2c8a85d906cfa[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu Jun 6 23:14:55 2024 +0800
+
+    1296. Divide Array in Sets of K Consecutive Numbers
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 1004b36b60d5d8e00e05afe0638ae98f9905d6b6[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu Jun 6 23:12:20 2024 +0800
+
+    846. Hand of Straights
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 3bf611bf187b9083af51943fc694721177b481ca[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jun 5 23:17:51 2024 +0800
+
+    128. Longest Consecutive Sequence
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 06cef4722b773d89534e16316fa8c9c16ee42da3[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed Jun 5 22:54:28 2024 +0800
+
+    1002. Find Common Characters
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 1d118b49b71907be0172e42032a452e44ae7abf1[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 4 22:35:58 2024 +0800
+
+    2384. Largest Palindromic Number
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 9a3c30cec53d63611339bb96ccfdcc58402ec00f[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue Jun 4 22:05:01 2024 +0800
+
+    409. Longest Palindrome
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit f92a0b71cb987fb49b3da40815d7510502a09f04[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 2 11:17:41 2024 +0800
+
+    11. Container With Most Water
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b535606d49aa7ef0cf2baf946b28d0578afa4908[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 2 10:45:43 2024 +0800
+
+    1442. Count Triplets That Can Form Two Arrays of Equal XOR
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit c36de336d8fde7829545addbc79820ed61fb2fec[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun Jun 2 09:24:31 2024 +0800
+
+    137. Single Number II
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 0abfe6016c46feca816385cff3f80585c35a6717[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 1 22:44:35 2024 +0800
+
+    136. Single Number
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit f27c82bb3ac1c29a450befad5b0f99f800e56d06[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 1 22:41:56 2024 +0800
+
+    260. Single Number III
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 35676aae188f945dbeec364214a33c597f615d19[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat Jun 1 21:54:43 2024 +0800
+
+    3110. Score of a String
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 8cf1f17067c35dc3a1c357b5d12b8b6c49b0ad61[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Wed May 29 23:28:00 2024 +0800
+
+    139. Word Break
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 4dec8f7ff2e1fae9334ddcd4dcc50eaeaec60700[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 25 15:30:21 2024 +0800
+
+    140. Word Break II
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b00f5e58941b17b02a54ab4b40c8e36c26eb9e10[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 25 14:59:57 2024 +0800
+
+    1255. Maximum Score Words Formed by Letters
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit b3069d548e48d0a6384cf329f0c1ee597b64225b[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 25 14:58:32 2024 +0800
+
+    2597. The Number of Beautiful Subsets
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 15c698bd083754c413d139ec9ca658b1e5afd8cb[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 25 12:42:18 2024 +0800
+
+    131. Palindrome Partitioning
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 4deea9440ad732187945b5e387231bb0b267ae12[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue May 21 22:55:31 2024 +0800
+
+    78. Subsets
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 6b90a787253a6ba7736f550a97063067caecdf80[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun May 19 21:53:48 2024 +0800
+
+    208. Implement Trie (Prefix Tree)
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 9bbe13be1916b0e8b83cf756033ee814e860c52d[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun May 19 19:14:17 2024 +0800
+
+    433. Minimum Genetic Mutation
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit d03e097be6705faae311d203cf84e7bf59fdae34[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 18 12:36:13 2024 +0800
+
+    200. Number of Islands
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 50e00a6cfbe04b9f8501fe6ce3075958d6580ff6[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 18 12:20:09 2024 +0800
+
+    199. Binary Tree Right Side View
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 31f3206276e2e98291cd1d76e90d5ec3c6ea735b[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 18 11:53:28 2024 +0800
+
+    mv *.capp to *.cpp
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit dfb36424a5f50421cf59eb374e3e394e50725b6f[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 18 11:51:28 2024 +0800
+
+    979. Distribute Coins in Binary Tree
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit c2b01f34174010c47d17885c832b85899305821e[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sat May 18 10:52:57 2024 +0800
+
+    106. Construct Binary Tree from Inorder and Postorder Traversal
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit d5e7a54e48aca1df0d83b84d447f26764bce12b1[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu May 16 23:38:50 2024 +0800
+
+    105. Construct Binary Tree from Preorder and Inorder Traversal
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit ef13d25fb9999955f1b194da8616443a0f3de9b1[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Thu May 16 22:10:05 2024 +0800
+
+    2331. Evaluate Boolean Binary Tree
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 10f0f5ae3af55a0d2a2a7099b8406367a80c60f0[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue May 14 22:45:04 2024 +0800
+
+    138. Copy List with Random Pointer
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit ff30810b90c0185eed17a0a1cd7e3b1b1652ad1a[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue May 14 22:17:06 2024 +0800
+
+    150. Evaluate Reverse Polish Notation
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 7141cd8434612b57dfbbe9875caf6ea80533949d[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue May 14 22:03:18 2024 +0800
+
+    57. Insert Interval
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 3a1d44c6a710213e609f40342735885e7b16b402[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Tue May 14 21:30:05 2024 +0800
+
+    1219. Path with Maximum Gold
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit cb21d6c65c815c7aad4c498a979a2dd97001a437[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun May 12 15:23:19 2024 +0800
+
+    383. Ransom Note
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 8306378ef94acfba2ad89e91d395e25748860904[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun May 12 15:11:38 2024 +0800
+
+    189. Rotate Array
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 19282ad63602a78af757173ef46e154647a6a8e4[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun May 12 14:33:01 2024 +0800
+
+    786. K-th Smallest Prime Fraction
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 89a4a1abb0fef1ea919a3be9232463a050f40e81[m
+Author: Oscar Ou <hhh860421@gmail.com>
+Date:   Sun May 12 14:31:46 2024 +0800
+
+    378. Kth Smallest Element in a Sorted Matrix
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit c870510f01ff6e6b3962e6daed20a78aaf0e9807[m
+Author: johnnyou <hhh860421@gmail.com>
+Date:   Sun May 12 14:20:03 2024 +0800
+
+    2373. Largest Local Values in a Matrix
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
+
+[33mcommit 90420b7c75f6c49d58c2d2cc1b03a424efe06d10[m
+Author: johnnyou <hhh860421@gmail.com>
+Date:   Sun May 12 13:45:57 2024 +0800
+
+    719. Find K-th Smallest Pair Distance
+    
+    Signed-off-by: Oscar Ou <hhh860421@gmail.com>
