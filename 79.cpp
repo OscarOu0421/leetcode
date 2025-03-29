@@ -1,38 +1,53 @@
-// Time: O(4^n), 4 directions at most n stacks
-// Space: O(n), at most n tims for stack
+// Time Complexity: O(m * n * 4^L) 
+// Space Complexity: O(L) — Depth of recursion stack (where L is the length of the word)
+
 class Solution {
 public:
-    bool dfs(vector<vector<char>>& board, string word, int i, int j, int k) {
-        if (i < 0 || i == board.size() || j < 0 || j == board[0].size())
+    // Depth-First Search (DFS) function to explore possible word paths
+    bool dfs(vector<vector<char>> &board, string word, int i, int j, int cur) {
+        int m = board.size();
+        int n = board[0].size();
+
+        // Out-of-bound check
+        if (i < 0 || i >= m || j < 0 || j >= n)
             return false;
-        
-        // current character of board is not equals to  current character of the word
-        if (board[i][j] != word[k])
+
+        // Character mismatch check
+        if (word[cur] != board[i][j])
             return false;
-        
-        // arriave at last character of the word
-        if (k == word.size()-1)
+
+        // Word fully matched
+        if (cur == word.size() - 1)
             return true;
-        
+
+        // Mark the current cell as visited (temporary marker)
         char tmp = board[i][j];
-        board[i][j] = '.';
-        bool up = dfs(board, word, i+1, j, k+1);
-        bool down = dfs(board, word, i-1, j, k+1);
-        bool left = dfs(board, word, i, j-1, k+1);
-        bool right = dfs(board, word, i, j+1, k+1);
+        board[i][j] = '*';  
+
+        // Explore all 4 possible directions
+        bool ret = dfs(board, word, i-1, j, cur + 1) || // Up
+                   dfs(board, word, i+1, j, cur + 1) || // Down
+                   dfs(board, word, i, j-1, cur + 1) || // Left
+                   dfs(board, word, i, j+1, cur + 1);   // Right
+        
+        // Restore the original character (backtracking)
         board[i][j] = tmp;
 
-        return up || down || left || right;
+        return ret;
     }
-    bool exist(vector<vector<char>>& board, string word) {
-        int m = board.size(), n = board[0].size();
 
+    // Main function to check if the word exists in the board
+    bool exist(vector<vector<char>>& board, string word) {
+        int m = board.size();
+        int n = board[0].size();
+
+        // Iterate through each cell to start the DFS
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (dfs(board, word, i, j, 0))
+                if (dfs(board, word, i, j, 0)) // Start DFS from each cell
                     return true;
             }
         }
-        return false;
+        return false; // Word not found
     }
 };
