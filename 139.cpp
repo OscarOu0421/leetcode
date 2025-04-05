@@ -1,35 +1,29 @@
-// Time: O(n^3), dp: O(n^2), substr: O(n)
-// Space: O(n + m), n is string size, m is dict size
+/*
+Time Complexity: O(n * m * l)
+- n = length of input string `s`
+- m = number of words in `wordDict`
+- l = average length of the words (for substring comparison)
+
+Space Complexity: O(n)
+- We use a dp array of size n + 1
+*/
+
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
         int n = s.size();
-        vector<int> dp(n+1, false); // dp is 1 indexed
-        unordered_set<string> set;
-        
-        for (auto word : wordDict) {
-            set.insert(word);
-        }
+        vector<bool> dp(n + 1, false);  // dp[i] means s[0..i-1] can be segmented
+        dp[0] = true;  // empty string is always breakable
 
-        // empty string is allowed with any wordDict
-        dp[0] = true;
-
-        // From each i, check if you can make word ending with i.
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j >= 0; j--) {
-                string sub = s.substr(j, i-j+1);
-                // If we make a word from s[j, i], 
-                // then we need to check if s[0, j] is valid.
-                if (set.count(sub)) {
-                    dp[i+1] = dp[j];
-
-                    // s[j, i] is valid and s[0, j] is valid
-                    // then s[0, i] is valid
-                    if (dp[i+1])
-                        break;
+        for (int i = 1; i <= n; i++) {
+            for (const string& word : wordDict) {
+                int len = word.size();
+                if (i >= len && s.substr(i - len, len) == word && dp[i - len]) {
+                    dp[i] = true;
+                    break;  // already breakable, skip other words
                 }
             }
         }
-        return dp[n];
+        return dp[n];  // whether the whole string can be segmented
     }
 };
