@@ -1,46 +1,46 @@
-// Time: O(2^n), total number of the subset is 2^n
-// Space: O(n), the length of the step is equal to the string.
+/*
+Time Complexity: Exponential in worst case: O(2^n)
+- At each character, you can potentially branch into multiple valid words.
+- In the worst case (e.g., all 1-letter valid words), you may explore nearly all subsets of positions.
+
+Space Complexity: O(n) recursion depth + output size
+- The recursion can go as deep as the length of the string (O(n)).
+- Plus the space used by the result vector which depends on the number and length of valid sentences.
+*/
+
 class Solution {
 public:
-    void insertRet(vector<string> &step, vector<string> &ret) {
-        string sentance = "";
-        for (auto word : step) {
-            sentance += word + " ";
-        }
-        // Remove the last char.
-        sentance.pop_back();
-        ret.push_back(sentance);
-    }
-    void dfs(string s, unordered_set<string> &set, vector<string> &step, vector<string> &ret) {
-        // End of the string, construct the sentance into the result.
-        if (s.size() == 0) {
-            insertRet(step, ret);
+    // Helper DFS function to build valid sentences
+    void dfs(string s, vector<string> &wordDict, vector<string> &ret, string sentence, int cur) {
+        int n = s.size();
+
+        // Base case: if we've reached the end of the string
+        if (cur == n) {
+            ret.push_back(sentence);  // Add the constructed sentence
             return;
         }
-        for (int i = 0; i <= s.size(); i++) {
-            string sub = s.substr(0, i);
-            // Whether the substring is in the dictionary.
-            if (set.count(sub) == 0)
+
+        // Try matching every word in the dictionary
+        for (const string& word : wordDict) {
+            int len = word.size();
+
+            // Skip if remaining string is too short
+            if (cur + len > n)
                 continue;
-            // Choose
-            step.push_back(sub);
-            // Explore
-            dfs(s.substr(i, s.size()), set, step, ret);
-            // Unchoose
-            step.pop_back();
+
+            // If substring matches a word
+            if (s.substr(cur, len) == word) {
+                string tmp = sentence;
+                tmp += (cur == 0 ? word : " " + word);  // Avoid leading space on first word
+                dfs(s, wordDict, ret, tmp, cur + len);  // Recurse with new index
+            }
         }
     }
+
+    // Main function to return all word break combinations
     vector<string> wordBreak(string s, vector<string>& wordDict) {
         vector<string> ret;
-        vector<string> step;
-        unordered_set<string> set;
-        
-        // Use set to record the word dictionary
-        for (auto word : wordDict) {
-            set.insert(word);
-        }
-
-        dfs(s, set, step, ret);
+        dfs(s, wordDict, ret, "", 0);  // Start DFS from index 0
         return ret;
     }
 };
