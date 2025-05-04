@@ -1,30 +1,28 @@
-/*
- * Problem: 322. Coin Change
- *
- * Approach:
- * - Use Dynamic Programming to compute the minimum number of coins needed to make up each amount.
- * - `dp[i]` stores the minimum number of coins to get amount `i`.
- * - Initialize dp[0] = 0, and the rest with a large value (infinity).
- * - For each amount from 1 to `amount`, try using each coin to minimize `dp[i]`.
- *
- * Time Complexity: O(amount * n), where n = number of coin denominations
- * Space Complexity: O(amount)
- */
+// Time Complexity: O(N * A), where N = number of coin types, A = target amount
+// Space Complexity: O(A), using a 1D dp array to store minimum coins for each amount
+
+// This is an Unbounded Knapsack problem:
+// - Each coin can be used unlimited times.
+// - Goal: Minimize the number of coins to reach the target amount.
+// - Key implementation detail: Inner loop goes FORWARD to allow multiple uses of the same coin.
 
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
-        vector<int> dp(amount + 1, amount + 1); // use amount+1 as "infinity"
-        dp[0] = 0; // 0 coins to make amount 0
+        vector<int> dp(amount + 1, INT_MAX); // dp[i] = min number of coins to get amount i
+        dp[0] = 0;  // Base case: 0 coins needed for amount 0
 
-        for (int i = 1; i <= amount; i++) {
-            for (int coin : coins) {
-                if (i >= coin) {
+        // Outer loop over coins: ensures each coin can be reused (Unbounded Knapsack)
+        for (int coin : coins) {
+            // Inner loop moves forward: allows using the same coin multiple times
+            for (int i = coin; i <= amount; ++i) {
+                if (dp[i - coin] != INT_MAX) {
                     dp[i] = min(dp[i], dp[i - coin] + 1);
                 }
             }
         }
 
-        return dp[amount] > amount ? -1 : dp[amount];
+        return dp[amount] == INT_MAX ? -1 : dp[amount];
     }
 };
+
