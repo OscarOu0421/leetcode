@@ -1,31 +1,25 @@
-// Time Complexity: O(log n) 
-// Space Complexity: O(1)
+// Time Complexity: O(log N) — binary search reduces the search space by half
+// Space Complexity: O(1) — constant extra space
 
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        int n = nums.size();  // Get the size of the array
-        int l = 0;  // Left pointer
-        int r = n - 1;  // Right pointer
+        int l = 0;                        // left boundary
+        int r = nums.size() - 1;         // right boundary
 
-        // If the array is not rotated (i.e., nums[l] < nums[r]), return the first element
-        if (nums[l] < nums[r])
-            return nums[l];
-
-        // Perform binary search
         while (l < r) {
-            int m = l + (r - l) / 2;  // Calculate the middle index to avoid overflow
+            int m = l + (r - l) / 2;     // compute mid index safely
 
-            // If nums[m] <= nums[r], the minimum is in the left half (including m)
-            if (nums[m] <= nums[r])
+            if (nums[m] > nums[r]) {
+                // minimum is in the right half (excluding mid)
+                l = m + 1;
+            } else {
+                // minimum is in the left half (including mid)
                 r = m;
-            else
-                l = m + 1;  // If nums[m] > nums[r], the minimum is in the right half
-
+            }
         }
 
-        // When l == r, we have found the minimum element
+        // when l == r, we found the smallest element
         return nums[l];
     }
 };
-
