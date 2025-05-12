@@ -1,42 +1,30 @@
-/* Solution1: DFS + Backtracking */
-// Time: O(2^n), 2^n subsets
-// Space: O(n), for map
+// Time Complexity: O(2^n), where n is the number of elements in `nums`. 
+//   Each element can be either included or excluded, and we may recurse on each subset.
+// Space Complexity: O(n) for recursion depth and frequency map.
+
 class Solution {
 public:
-    bool isBeautiful(int num, int k, unordered_map<int, int> &freq) {
-        return freq[num - k] == 0 && freq[num + k] == 0;
-    }
-    void dfs(vector<int> &nums, int i, int k, int &ret, unordered_map<int, int> &freq) {
-        if (i == nums.size()) {
-            ret++;
-            return;
-        }
-        
-        // not take nums[i]
-        dfs(nums, i+1, k, ret, freq);
+    // Recursive helper to explore all subsets starting from index `start`
+    void helper(vector<int>& nums, int k, int start, int &ret, unordered_map<int, int> &freq) {
+        ret++;  // Count current subset as valid
 
-        // take nums[i]
-        if (isBeautiful(nums[i], k, freq)) {
-            // choose
-            freq[nums[i]]++;
-            // explore
-            dfs(nums, i+1, k, ret, freq);
-            // unchoose
-            freq[nums[i]]--;
+        for (int i = start; i < nums.size(); i++) {
+            // Skip if adding nums[i] would violate the beautiful condition
+            if (freq[nums[i] - k] != 0 || freq[nums[i] + k] != 0)
+                continue;
+
+            freq[nums[i]]++;                       // Choose nums[i]
+            helper(nums, k, i + 1, ret, freq);     // Recurse with next index
+            freq[nums[i]]--;                       // Backtrack
         }
-        return;
     }
+
     int beautifulSubsets(vector<int>& nums, int k) {
-        int ret = 0;
-        unordered_map<int, int> freq;
+        int ret = 0;                         // Count of all valid beautiful subsets
+        int n = nums.size();                 // Number of elements in input
+        unordered_map<int, int> freq;        // Frequency map to track current subset elements
 
-        if (nums.size() == 0)
-            return ret;
-        
-        dfs(nums, 0, k, ret, freq);
-
-        // result should not includ empty set,
-        // delete one for empty set.
-        return ret-1;
+        helper(nums, k, 0, ret, freq);       // Start recursive exploration
+        return ret - 1;                      // Subtract empty set which was counted
     }
 };
