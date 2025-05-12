@@ -1,9 +1,15 @@
-// Time: O(2^n), there are 2^n substring for dfs.
-// Space: O(n), Only one result in step at the same time.
+// Time Complexity: O(2^n * n), where n is the length of the string.
+// - There are up to 2^n possible partitions.
+// - Each partition takes up to O(n) time to verify palindromes and copy strings.
+// Space Complexity: O(n) for the recursion call stack and path storage.
+
 class Solution {
 public:
-    bool isPalindrome(string s) {
-        int l = 0, r = s.size()-1;
+    // Utility function to check if a string is a palindrome
+    bool ispalin(string s) {
+        int l = 0;
+        int r = s.size() - 1;
+
         while (l < r) {
             if (s[l] != s[r])
                 return false;
@@ -12,34 +18,31 @@ public:
         }
         return true;
     }
-    void helper(string s, vector<string> &step, vector<vector<string>> &ret) {
-        // end of the string, insert steps into result
-        if (s.size() == 0) {
-            ret.push_back(step);
-            return;
-        }
-        for (int i = 1; i <= s.size(); i++) {
-            string sub = s.substr(0, i);
-            if (!isPalindrome(sub))
+
+    // Helper function to generate all palindrome partitions
+    void helper(string s, int start, vector<string> path, vector<vector<string>> &ret) {
+        string cur = "";
+
+        // Base case: if start reached end of string, store the current path
+        if (start == s.size())
+            ret.push_back(path);
+
+        // Explore all substrings starting from current index
+        for (int i = start; i < s.size(); i++) {
+            cur += s[i];                  // Append character to current substring
+            if (!ispalin(cur))            // Skip if not palindrome
                 continue;
 
-            // choose
-            step.push_back(sub);
-            // explore
-            helper(s.substr(i, s.size()-1), step, ret);
-            // unchoose
-            step.pop_back();
+            path.push_back(cur);          // Choose this palindrome
+            helper(s, i + 1, path, ret);  // Recurse on remaining substring
+            path.pop_back();              // Backtrack
         }
-        return;
     }
+
+    // Main function to return all palindrome partitions
     vector<vector<string>> partition(string s) {
-        vector<string> step;
         vector<vector<string>> ret;
-
-        if (s.size() == 0)
-            return ret;
-
-        helper(s, step, ret);
+        helper(s, 0, {}, ret);            // Start DFS from index 0
         return ret;
     }
 };
