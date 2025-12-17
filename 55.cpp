@@ -1,19 +1,26 @@
-// Time Complexity: O(n) - Single pass through the array
-// Space Complexity: O(1) - No extra space used
 class Solution {
 public:
+    /*
+     * Time Complexity: O(n)
+     *   - Traverse the array once.
+     *
+     * Space Complexity: O(1)
+     *   - Uses constant extra space.
+     */
     bool canJump(vector<int>& nums) {
         int n = nums.size();
-        int reach = n - 1; // Start by assuming the last index must be reachable
+        int reach = 0;  // Farthest index that can be reached so far
 
-        // Traverse the array from right to left
-        for (int i = n - 2; i >= 0; i--) {
-            // If the current index can reach the 'reach' point, update 'reach'
-            if (i + nums[i] >= reach)
-                reach = i; // Move the target closer to the start
+        for (int i = 0; i < n; i++) {
+            // If current index is beyond reachable range, jump is impossible
+            if (i > reach)
+                return false;
+
+            // Update the farthest reachable index
+            reach = max(reach, i + nums[i]);
         }
-        
-        // If the leftmost index becomes the target, the start is reachable
-        return reach == 0;
+
+        // Successfully reached or passed the last index
+        return true;
     }
 };
