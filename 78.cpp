@@ -1,26 +1,39 @@
-// Time: O(n * 2^n)
-// Space: O(1)
-/*
-Using [1, 2, 3] as an example, the iterative process is like:
-
-1. Initially, one empty subset [[]]
-2. Adding 1 to []: [[], [1]];
-3. Adding 2 to [] and [1]: [[], [1], [2], [1, 2]];
-4. Adding 3 to [], [1], [2] and [1, 2]: [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]].
-*/
 class Solution {
 public:
-    vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> ret{{}};
-
-        for (auto num : nums) {
-            int n = ret.size();
-            for (int i = 0; i < n; i++) {
-                ret.push_back(ret[i]);
-                ret.back().push_back(num);
-            }
+    /*
+     * Time Complexity: O(2^n)
+     *   - Each element has two choices (include or exclude),
+     *     resulting in 2^n subsets.
+     *
+     * Space Complexity: O(n)
+     *   - Recursion depth is at most n (call stack).
+     *   - Path vector also uses up to n space.
+     *   - Output space (all subsets) is not counted.
+     */
+    void helper(vector<int> nums, int i, vector<vector<int>> &ret, vector<int> path) {
+        // Base case: all elements have been considered
+        if (i == nums.size()) {
+            ret.push_back(path);
+            return;
         }
 
+        // Choice 1: include nums[i]
+        path.push_back(nums[i]);
+        helper(nums, i + 1, ret, path);
+
+        // Backtrack
+        path.pop_back();
+
+        // Choice 2: exclude nums[i]
+        helper(nums, i + 1, ret, path);
+    }
+
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> ret;
+
+        // Start DFS from index 0 with an empty path
+        helper(nums, 0, ret, {});
         return ret;
     }
 };
+
