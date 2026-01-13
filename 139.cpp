@@ -1,29 +1,35 @@
-/*
-Time Complexity: O(n * m * l)
-- n = length of input string `s`
-- m = number of words in `wordDict`
-- l = average length of the words (for substring comparison)
+    /*
+     * Time Complexity: O(n^2)
+     * - Two loops: i from 1 to n, j from 0 to i
+     * - Substring creation is O(n) in worst case, but acceptable in interviews
+     *
+     * Space Complexity: O(n)
+     * - dp array of size n + 1
+     * - unordered_set for dictionary
+     */
 
-Space Complexity: O(n)
-- We use a dp array of size n + 1
-*/
-
-class Solution {
-public:
     bool wordBreak(string s, vector<string>& wordDict) {
         int n = s.size();
-        vector<bool> dp(n + 1, false);  // dp[i] means s[0..i-1] can be segmented
-        dp[0] = true;  // empty string is always breakable
+
+        // Convert wordDict to a hash set for O(1) lookup
+        unordered_set<string> dict(wordDict.begin(), wordDict.end());
+
+        // dp[i] = true if s[0..i-1] can be segmented
+        vector<bool> dp(n + 1, false);
+
+        // Base case: empty string
+        dp[0] = true;
 
         for (int i = 1; i <= n; i++) {
-            for (const string& word : wordDict) {
-                int len = word.size();
-                if (i >= len && s.substr(i - len, len) == word && dp[i - len]) {
+            for (int j = 0; j < i; j++) {
+                // If prefix is valid and substring exists in dictionary
+                if (dp[j] && dict.count(s.substr(j, i - j))) {
                     dp[i] = true;
-                    break;  // already breakable, skip other words
+                    break; // No need to check further
                 }
             }
         }
-        return dp[n];  // whether the whole string can be segmented
+
+        return dp[n];
     }
 };
